@@ -20,7 +20,7 @@
       "dependsOn": ["build"]
     },
     "manual-install": {
-      "command": "sh tools/scripts/manual-install.sh",
+      "command": "wsl bash tools/scripts/manual-install.sh {args.path}",
       "dependsOn": ["build"]
     },
     "lint": {
