@@ -5,6 +5,7 @@ import * as assortedscans from './extensions/assortedscans';
 import * as comick from './extensions/comick';
 import * as deathtollscans from './extensions/deathtollscans';
 import * as disasterscans from './extensions/disasterscans';
+import * as cubari from './extensions/cubari';
 import * as guya from './extensions/guya';
 import * as hniscantrad from './extensions/hniscantrad';
 import * as immortalupdates from './extensions/immortalupdates';
@@ -66,6 +67,7 @@ export class TiyoClient extends TiyoClientAbstract {
     [comick.METADATA.id]: { metadata: comick.METADATA, client: new comick.ExtensionClient(this._webviewFn)},
     [deathtollscans.METADATA.id]: { metadata: deathtollscans.METADATA, client: new deathtollscans.ExtensionClient(this._webviewFn)},
     [disasterscans.METADATA.id]: { metadata: disasterscans.METADATA, client: new disasterscans.ExtensionClient(this._webviewFn)},
+    [cubari.METADATA.id] : {metadata: cubari.METADATA , client: new cubari.CubariExtensionClient(this._webviewFn)},
     [guya.METADATA.id]: { metadata: guya.METADATA, client: new guya.ExtensionClient(this._webviewFn)},
     [hniscantrad.METADATA.id]: { metadata: hniscantrad.METADATA, client: new hniscantrad.ExtensionClient(this._webviewFn)},
     [immortalupdates.METADATA.id]: { metadata: immortalupdates.METADATA, client: new immortalupdates.ExtensionClient(this._webviewFn)},
